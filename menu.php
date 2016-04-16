@@ -1,5 +1,4 @@
 <nav>
-  <img src="" alt="шапка центра "Аянгара"" />
     <ul>
         <li <?php if (PAGE == 'index') echo 'class = "active"'; ?>><a href = "index.php">Главная</a></li>
         <li <?php if (PAGE == 'about') echo 'class = "active"'; ?>><a href = "about.php">О нас</a></li>
