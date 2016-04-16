@@ -24,9 +24,11 @@ nav {
 		border: 1px solid black;
 
 	}
-h1{
+h1, h2{
     text-align: center;
+    font-variant: small-caps;
 }
+
 
 	a {
 		text-decoration: none;
@@ -38,7 +40,6 @@ h1{
 	}
 
 .index_block{
-width: 33%;
     float: left;
 
 }
@@ -47,3 +48,17 @@ width: 33%;
     flex-direction: column;
     text-align: center;
 }
+
+.index_list{
+  		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;  
+}
+	.index_li {
+		text-align: center;
+        border: none;
+        float: none;
+
+	}
