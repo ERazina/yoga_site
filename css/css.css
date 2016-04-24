@@ -5,6 +5,12 @@
     color: #73449d;
 }
 
+#phone{
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+
 nav {
     width: 100%;
 }
@@ -21,26 +27,31 @@ li {
     text-align: center;
     display: block;
     float: left;
-    width: calc(100%/5);
+    width: calc(100%/6);
     padding: 3px;
     box-sizing: border-box;
+    border-right: 1px solid #73449d;
 }
 
 h1, h2{
     text-align: center;
     font-variant: small-caps;
+    padding-top: 50px;
+}
+h2{
+  padding-top: 30px;  
 }
 
 #logo{
     position: absolute;
     top: 0;
-    left: 115px;
-    width: 17%;
+    left: 240px;
+    width: 15%;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #73449d; 
     background-color: #bcbfcf;
 }
 
@@ -52,6 +63,8 @@ a {
 .index_block{
     width: 33%;
     float: left;
+    padding-top: 30px;
+    text-align: center;
 }
 
 #index_flexbox{
@@ -78,12 +91,27 @@ a {
 .index_image{
     border-radius: 200px;
     width: 45%;
+    display: block;
+    margin: 0 auto;
 }
 
 footer{
-    background-color:#808080;
-    height: 2.5em;
-    width: 100%;
-    position: fixed;
-    bottom: 0;   
+    position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
+	clear:both;
+    background-color: #b2aae6;
+} 
+
+
+
+#about_text{
+    padding-bottom: 140px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 }
+h4{
+    text-align: center;
+}
+
