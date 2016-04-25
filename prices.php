@@ -20,7 +20,6 @@ include_once "menu.php";
     </ul> 
 </div>
 <div class="index_block">
-  <img src="img/price3.jpg" class="index_image">
     <h2>9 занятий</h2>
     <ul class = "index_list">
         <li class="index_li">Доступные цены и акции</li>
@@ -31,7 +30,6 @@ include_once "menu.php";
     </ul>
 </div>
 <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
   <h2>14 занятий</h2>
     <ul class = "index_list">
         <li class="index_li">30 занятий в неделю.</li>
@@ -41,7 +39,6 @@ include_once "menu.php";
     </ul>
 </div>
     <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
   <h2>21 занятие</h2>
     <ul class = "index_list">
         <li class="index_li">30 занятий в неделю.</li>
@@ -51,7 +48,6 @@ include_once "menu.php";
     </ul>
 </div>
     <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
   <h2>Без ограничений</h2>
     <ul class = "index_list">
         <li class="index_li">30 занятий в неделю.</li>
@@ -61,7 +57,6 @@ include_once "menu.php";
     </ul>
 </div>
     <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
   <h2>1 занятие</h2>
     <ul class = "index_list">
         <li class="index_li">30 занятий в неделю.</li>
