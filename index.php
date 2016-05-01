@@ -6,8 +6,8 @@ include_once "menu.php";
 ?>
 
 <h1>наши преимущества:</h1>
-<div id = "index-flexbox">
-<div class="index_block">
+<div class = "price-flexbox">
+<div class="index-block">
 <img src="img/yoga1.jpg" class = "index_image">
   <h2>методика</h2>
     <ul class = "index_list">
@@ -17,7 +17,7 @@ include_once "menu.php";
         <li class="index_li">Квалифицированные преподаватели.</li>
     </ul> 
 </div>
-<div class="index_block">
+<div class="index-block">
   <img src="img/price3.jpg" class="index_image">
     <h2>цены</h2>
     <ul class = "index_list">
@@ -28,7 +28,7 @@ include_once "menu.php";
         <li class="index_li">Все доступные способы оплаты.</li>
     </ul>
 </div>
-<div class="index_block">
+<div class="index-block">
 <img src="img/yoga_clock.jpg" class = "index_image">
   <h2>расписание</h2>
     <ul class = "index_list">
@@ -38,8 +38,15 @@ include_once "menu.php";
         <li class="index_li">Удобная запись</li>
     </ul>
 </div>
-</div>
 
+</div>
+<h2>Хочу к Вам</h2>
+     <form action="mailto:razina_elina@mail.ru" enctype="text/plain">
+        <div><input type = "text" name = "first_name" placeholder = "Введите имя"></div>
+        <div><input type = "text" name = "last_name" placeholder = "Введите фамилию"></div>
+        <div><input type = "text" name = "phone" placeholder = "Телефон"></div>
+        <div><input type = "submit" value="Написать письмо"></div>
+    </form>
 
 
 

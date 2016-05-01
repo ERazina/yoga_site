@@ -4,13 +4,11 @@ include_once "header.html";
 include_once "menu.php";
 ?>
 
-
 <h1>С абонементом лучше!</h1>
 
-<p>Абонемент — это не только более доступный способ оплаты, но и простая возможность войти в ритм практики, занимаясь йогой регулярно.</p>
-
+<p class="p_text">Абонемент — это не только более доступный способ оплаты, но и простая возможность войти в ритм практики, занимаясь йогой регулярно.</p>
 <div class = "price-flexbox">
-<div class="price-block">
+<div class="block">
   <h2>5 занятий</h2>
     <ul class = "index_list">
         <p class = "price">&#8381;2250</p>
@@ -21,7 +19,7 @@ include_once "menu.php";
     </ul> 
     <a href = "mailto:razina_elina@mail.ru" class = "price-button"><span>Заказать</span></a>
 </div>
-<div class="price-block">
+<div class="block">
   <h2>9 занятий</h2>
     <ul class = "index_list">
         <p class = "price">&#8381;3600</p>
@@ -32,7 +30,7 @@ include_once "menu.php";
     </ul> 
     <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-<div class="price-block">
+<div class="block">
   <h2>14 занятий</h2>
     <ul class = "index_list">
         <p class = "price">&#8381;5000</p>
@@ -45,7 +43,7 @@ include_once "menu.php";
 </div>
     </div>
 <div class = "price-flexbox">
-<div class="price-block">
+<div class="block">
   <h2>21 занятие</h2>
     <ul class = "index_list">
         <p class = "price">&#8381;7000</p>
@@ -54,7 +52,7 @@ include_once "menu.php";
         <li class="index_li">Можно передавать другому</li>
         <li class="index_li">Выгода 3507 рублей</li>
     </ul> 
-    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button-active">Заказать</a>
 </div>
 <div id="price-block-free">
   <h2>Без органичений</h2>
@@ -67,7 +65,7 @@ include_once "menu.php";
     </ul> 
     <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-<div class="price-block">
+<div class="block">
   <h2>1 занятие</h2>
     <ul class = "index_list">
         <p class = "price">&#8381;500</p>
@@ -75,6 +73,7 @@ include_once "menu.php";
     <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
 </div>
+
 
 <?php
 include_once "footer.html";

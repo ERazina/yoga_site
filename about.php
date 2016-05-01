@@ -19,20 +19,20 @@ include_once "menu.php";
 Ждем Вас на занятиях йогой!
 </p>
     <h2>Наши преподаватели</h2>
-    <div id = "index-flexbox">
-<div class="index_block">
+    <div class = "price-flexbox">
+<div class="about-block">
 <img src="img/face1.jpg" class = "index_image">
     <h4>Елена Макарова</h4>
     <p>Йога для меня — это жизнь. На этом бы и остановила рассуждения про йогу. Если бы так не хотелось поделиться с вами своей историей.</p>
  
 </div>
-<div class="index_block">
+<div class="about-block">
   <img src="img/face2.jpg" class="index_image">
     <h4>Влад Лисовец</h4>
     <p>Йога совершенно незаметно, но кардинально изменила мою жизнь.</p>
 
 </div>
-<div class="index_block">
+<div class="about-block">
 <img src="img/face3.jpg" class = "index_image">
   <h4>Мария Левицкая</h4>
     <p>Мне нравится состояние внутренний тишины и йога помогает его обрести. Это совсем не сложно)</p>
