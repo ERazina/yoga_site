@@ -1,5 +1,5 @@
 <?php
-define('PAGE', 'index');
+define('PAGE', 'prices');
 include_once "header.html";
 include_once "menu.php";
 ?>
@@ -9,66 +9,70 @@ include_once "menu.php";
 
 <p>Абонемент — это не только более доступный способ оплаты, но и простая возможность войти в ритм практики, занимаясь йогой регулярно.</p>
 
-<div id = "index-flexbox">
-<div class="index_block">
+<div class = "price-flexbox">
+<div class="price-block">
   <h2>5 занятий</h2>
     <ul class = "index_list">
-        <li class="index_li">Йога Айенгара – самая безопасная и эффективная методика</li>
-        <li class="index_li">Йога для начинающих и продолжающих</li>
-        <li class="index_li">Йога терапия. Занятия йогой для решения проблем со здоровьем.</li>
-        <li class="index_li">Квалифицированные преподаватели.</li>
+        <p class = "price">&#8381;2250</p>
+        <li class="index_li">1 месяц</li>
+        <li class="index_li">450 рублей за занятие</li>
+        <li class="index_li">Можно передавать другому</li>
+        <li class="index_li">Выгода 250 рублей</li>
     </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button"><span>Заказать</span></a>
 </div>
-<div class="index_block">
-  <img src="img/price3.jpg" class="index_image">
-    <h2>9 занятий</h2>
+<div class="price-block">
+  <h2>9 занятий</h2>
     <ul class = "index_list">
-        <li class="index_li">Доступные цены и акции</li>
-        <li class="index_li">Занятия не пропадают. Не использованный остаток переноситься на любой следующий абонемент.</li>
-        <li class="index_li">Рассрочка и большой срок действия абонементов.</li>
-        <li class="index_li">Скидка при продлении абонемента.</li>
-        <li class="index_li">Все доступные способы оплаты.</li>
-    </ul>
+        <p class = "price">&#8381;3600</p>
+        <li class="index_li">1 месяц</li>
+        <li class="index_li">400 рублей за занятие</li>
+        <li class="index_li">Можно передавать другому</li>
+        <li class="index_li">Выгода 900 рублей</li>
+    </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-<div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
+<div class="price-block">
   <h2>14 занятий</h2>
     <ul class = "index_list">
-        <li class="index_li">30 занятий в неделю.</li>
-        <li class="index_li">Семь дней в неделю: Утро / День / Вечер.</li>
-        <li class="index_li">Мини-группы до 6 человек.</li>
-        <li class="index_li">Удобная запись</li>
-    </ul>
+        <p class = "price">&#8381;5000</p>
+        <li class="index_li">1 месяц</li>
+        <li class="index_li">357 рублей за занятие</li>
+        <li class="index_li">Можно передавать другому</li>
+        <li class="index_li">Выгода 2100 рублей</li>
+    </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-    <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
+    </div>
+<div class = "price-flexbox">
+<div class="price-block">
   <h2>21 занятие</h2>
     <ul class = "index_list">
-        <li class="index_li">30 занятий в неделю.</li>
-        <li class="index_li">Семь дней в неделю: Утро / День / Вечер.</li>
-        <li class="index_li">Мини-группы до 6 человек.</li>
-        <li class="index_li">Удобная запись</li>
-    </ul>
+        <p class = "price">&#8381;7000</p>
+        <li class="index_li">2 месяца</li>
+        <li class="index_li">333 рубля за занятие</li>
+        <li class="index_li">Можно передавать другому</li>
+        <li class="index_li">Выгода 3507 рублей</li>
+    </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-    <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
-  <h2>Без ограничений</h2>
+<div id="price-block-free">
+  <h2>Без органичений</h2>
     <ul class = "index_list">
-        <li class="index_li">30 занятий в неделю.</li>
-        <li class="index_li">Семь дней в неделю: Утро / День / Вечер.</li>
-        <li class="index_li">Мини-группы до 6 человек.</li>
-        <li class="index_li">Удобная запись</li>
-    </ul>
+        <p class = "price">&#8381;10000</p>
+        <li class="index_li">3 месяца</li>
+        <li class="index_li">222 рубля за занятие</li>
+        <li class="index_li">Можно передавать другому</li>
+        <li class="index_li">Выгода зависит от количества посещений</li>
+    </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
-    <div class="index_block">
-<img src="img/yoga_clock.jpg" class = "index_image">
+<div class="price-block">
   <h2>1 занятие</h2>
     <ul class = "index_list">
-        <li class="index_li">30 занятий в неделю.</li>
-        <li class="index_li">Семь дней в неделю: Утро / День / Вечер.</li>
-        <li class="index_li">Мини-группы до 6 человек.</li>
-        <li class="index_li">Удобная запись</li>
-    </ul>
+        <p class = "price">&#8381;500</p>
+    </ul> 
+    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
 </div>
 </div>
 

@@ -1,5 +1,5 @@
 <?php
-define('PAGE', 'index');
+define('PAGE', 'schedule');
 include_once "header.html";
 include_once "menu.php";
 ?>

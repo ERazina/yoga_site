@@ -95,6 +95,58 @@ a {
     margin: 0 auto;
 }
 
+.price{
+    font-size: 40px;
+    color: #ffa000;
+}
+
+.price-flexbox{
+ display: flex;   
+}
+
+.price-button{
+    border: 1px solid #73449d;
+    border-radius: 15px;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    margin: 25%;
+    padding: 20px;
+    color: #73449d;
+    
+}
+
+a:hover{
+    color: #ffa000;
+}
+
+.price-button:hover{
+    color:#ffa000;
+    background: #ffffff;
+}
+.price-block{
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #73449d;
+    margin: 5px;
+    width: 33%;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+#price-block-free{
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #73449d;
+    background-color: #73449d;
+    color: #ffffff;
+    margin: 5px;
+    width: 33%;
+    justify-content: space-around;
+    padding-bottom: 50px;   
+}
+
 footer{
     position: relative;
 	margin-top: -100px; /* negative value of footer height */

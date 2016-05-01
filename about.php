@@ -1,5 +1,5 @@
 <?php
-define('PAGE', 'index');
+define('PAGE', 'about');
 include_once "header.html";
 include_once "menu.php";
 ?>
