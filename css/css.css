@@ -198,6 +198,27 @@ a:hover{
     padding-bottom: 50px;   
 }
 
+#tab{
+    width: 100%;
+    border: 1px solid #73449d;
+    border-radius: 10px;
+}
+.inner_tab{
+    width: 100%;
+    border: 1px solid #73449d;
+    text-align: center;
+}
+.inner_tab:hover{
+    background-color: #73449d;
+    color: #fff;
+}
+.td_day{
+    width: 15%;
+}
+td{
+    text-align: center;
+}
+
 footer{
     position: relative;
 	height: 100px;
