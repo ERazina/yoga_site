@@ -17,7 +17,7 @@ include_once "menu.php";
         <li class="index_li">Можно передавать другому</li>
         <li class="index_li">Выгода 250 рублей</li>
     </ul> 
-    <a href = "mailto:razina_elina@mail.ru" class = "price-button"><span>Заказать</span></a>
+    <a href = "buy.php" class = "price-button"><span>Заказать</span></a>
 </div>
 <div class="block">
   <h2>9 занятий</h2>
@@ -63,7 +63,7 @@ include_once "menu.php";
         <li class="index_li">Можно передавать другому</li>
         <li class="index_li">Выгода зависит от количества посещений</li>
     </ul> 
-    <a href = "mailto:razina_elina@mail.ru" class = "price-button">Заказать</a>
+    <a href = "mailto:razina_elina@mail.ru" id = "price-button-white">Заказать</a>
 </div>
 <div class="block">
   <h2>1 занятие</h2>

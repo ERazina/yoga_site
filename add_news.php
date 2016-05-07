@@ -5,7 +5,6 @@ include_once "menu.php";
 include_once "config.php";
 
 ?>
-
   <script>
   $(function() {
     $( "#datepicker" ).datepicker();
@@ -28,7 +27,7 @@ $db = mysql_connect(HOST,USER,PASS,DB) OR DIE("Не могу создать со
 $result = mysql_query("INSERT INTO `yoga`.`news` (`id`, `title`, `text`) VALUES ('', '$title', '$text')");
 
 if ($result = 'true'){
-    echo "Новость записана";
+    echo "Информация занесена в базу данных";
 }
     else{
     echo "Информация не занесена в базу данных";

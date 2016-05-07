@@ -7,11 +7,11 @@ include_once "menu.php";
 <h1>Расписание</h1>
 <table id = "tab">
     <tr>
-        <td class = "td_day">День недели</td>
-        <td>Уровень сложности</td>
-        <td>Время</td>
-        <td>Место</td>
-        <td>Преподаватель</td>
+        <th id = "day">День недели</th>
+        <th id = "level">Уровень сложности</th>
+        <th id = "time">Время</th>
+        <th id = "place">Место</th>
+        <th id = "teacher">Преподаватель</th>
     </tr>
         <table class = "inner_tab">
                 <tr>

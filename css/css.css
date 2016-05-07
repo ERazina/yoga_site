@@ -108,7 +108,8 @@ a {
 }
 
 .price-flexbox{
- display: flex;   
+ display: flex; 
+    margin-top: 3%;
 }
 
 .price-button{
@@ -117,12 +118,25 @@ a {
     background: transparent;
     outline: none;
     text-align: center;
-    margin: 25%;
+    margin: 28%;
     padding: 20px;
-    color: #73449d;
-    
+    color: #73449d;  
 }
 
+#price-button-white{
+    border: 1px solid #73449d;
+    border-radius: 15px;
+    background: white;
+    outline: none;
+    text-align: center;
+    margin: 29%;
+    padding: 20px;
+    color: #73449d;
+}
+#price-button-white:hover{
+   color: #ffa000; 
+}    
+    
 a:hover{
     color: #ffa000;
 }
@@ -190,18 +204,50 @@ a:hover{
     box-sizing: border-box;
     border-radius: 30px;
     border: 1px solid #73449d;
-    background-color: #73449d;
-    color: #ffffff;
     margin: 5px;
     width: 33%;
     justify-content: space-around;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #73449d;
+    color: white;
 }
-
+#copy{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
+}
+#reg_form{
+    width: 100%;
+    text-align: center;
+}
+#reg{
+    float: right;
+    color: black;
+}
 #tab{
     width: 100%;
     border: 1px solid #73449d;
-    border-radius: 10px;
+}
+#day{
+    width: 20%;
+    text-align: center;
+}
+
+#level{
+    width: 19%;
+}
+#time{
+    width: 19%;
+    text-align: center; 
+}
+#place{
+    width: 18%;
+    text-align: left;
+}
+#teacher{
+    text-align: left;
 }
 .inner_tab{
     width: 100%;
@@ -221,11 +267,31 @@ td{
 
 footer{
     position: relative;
-	height: 100px;
+	height: 170px;
 	clear:both;
     background-color: #b2aae6;
 } 
+#footer_form{
+    margin-left: 1%;
+}
 
+.input_footer{
+    background-color: transparent;
+    color: #73449d;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    width: 20%;
+}
+.button{
+    background-color: #d1e2f2;
+    margin-left: 7%;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: white;
+    color: orange;
+}
 .transparent{
     background-color: transparent;
 }
@@ -243,3 +309,36 @@ h4{
     text-align: center;
 }
 
+#contacts_form{
+    width: 35%;
+    border: 1px solid #73449d;
+    text-align: center;
+    height: 150px;
+    border-radius: 20px;
+    margin-left: 1%;
+    
+}
+
+#contacts_flexbox{
+    display: flex;
+    flex-flow: row;
+}
+
+#contacts_header{
+    margin-top: 0;
+    padding-top: 0;
+}
+.news{
+    width: 80%;
+    border: 1px solid #73449d;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.news >h2{
+    padding-top: 0px;
+}
+.news p{
+    text-align: center;
+}
