@@ -352,3 +352,9 @@ h4{
 .news p{
     text-align: center;
 }
+
+.f{
+    position: absolute;
+    top: 100px;
+    z-index: 1000;
+}
