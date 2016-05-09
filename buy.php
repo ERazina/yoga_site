@@ -6,7 +6,7 @@ include_once "config.php";
 
 if (isset($_POST['name']) && isset($_POST['surname'])){
 // Переменные из формы
-$ticket = trim(htmlspecialchars($_POST['ticket']));
+$ticket = (int)$_POST['ticket'];
 $name = trim(htmlspecialchars($_POST['name']));
 $surname = trim(htmlspecialchars($_POST['surname']));
 $phone = trim(htmlspecialchars($_POST['phone']));
@@ -16,19 +16,23 @@ $db = mysql_connect(HOST, USER, PASS, DB) OR DIE("Не могу создать �
 
 // Выборка базы
 //mysql_select_db("yoga");
+    
 $sql = mysql_query("
     INSERT INTO `yoga`.`users` 
     (`id`, `name`, `surname`, `email`, `login`, `pass`, `phone`) 
     VALUES (NULL, '$name', '$surname', '$email', NULL, NULL, '$phone');
+    ", $db);
     
+$sql = mysql_query("
     INSERT INTO `yoga`.`orders` 
     (`id`, `user_id`, `ticket_name`) 
-    VALUES (NULL, '3', '$ticket');
+    VALUES (NULL, '2', '$ticket');
     ", $db);
+    
 $select_result = mysql_query($sql, $db);
     
 if($select_result = 'true'){
-    echo "Информация занесена в базу данных";
+    echo "Спасибо за покупку. Заберите Ваш абонемент на ресепшен.";
 }
     else{
     echo "Информация не занесена в базу данных";
@@ -38,7 +42,7 @@ if($select_result = 'true'){
 <h1>Купить абонемент</h1>
 <form method ="post">
         Выберете абонемент<select class="cs-select cs-skin-rotate" name = "ticket">
-            <option value="1">Без ограничений</option>
+            <option value="1" selected>Без ограничений</option>
             <option value="2">5 занятий</option>
             <option value="3">9 занятий</option>
             <option value="4">14 занятий</option>
@@ -53,10 +57,5 @@ if($select_result = 'true'){
 
 
 <?php
-
-
-
-
-
 include_once "footer.html";
 ?>

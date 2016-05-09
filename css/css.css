@@ -353,8 +353,14 @@ h4{
     text-align: center;
 }
 
-.f{
-    position: absolute;
-    top: 100px;
-    z-index: 1000;
+.img_news{
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.text{
+    display: block;
+    float: right;
+    
 }

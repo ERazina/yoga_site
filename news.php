@@ -79,8 +79,8 @@ while($data = mysql_fetch_array($select_result)){
     echo '<div class = "news">';
     //echo;
     echo '<h2>' . $data['title'] . '</h2>'; 
-    echo '<img src="images/'.$data['img'].'" >';
-    echo '<p>' . $data['text'] . '</p>';
+    echo '<img class = "img_news" src="images/'.$data['img'].'" >';
+    echo '<p class = "text">' . $data['text'] . '</p>';
     echo '<p>' . $data['date'] . '</p>';
     echo '</div>';
     
