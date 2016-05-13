@@ -1,4 +1,3 @@
-
 <?php
 define('PAGE', 'index');
 include_once "header.html";

@@ -3,6 +3,8 @@ define('PAGE', 'about');
 include_once "header.html";
 include_once "menu.php";
 include_once "config.php";
+//include_once "function.php";
+
 
 if (isset($_POST['name']) && isset($_POST['surname'])){
 // Переменные из формы
@@ -26,9 +28,9 @@ $sql = mysql_query("
 $sql = mysql_query("
     INSERT INTO `yoga`.`orders` 
     (`id`, `user_id`, `ticket_name`) 
-    VALUES (NULL, '2', '$ticket');
+    VALUES (NULL, '', '$ticket');
     ", $db);
-    
+      
 $select_result = mysql_query($sql, $db);
     
 if($select_result = 'true'){

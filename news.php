@@ -5,12 +5,6 @@ include_once "menu.php";
 include_once "config.php";
 ?>
 
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
-
 <h1>Наши новости</h1>
 
 <?php
@@ -77,10 +71,9 @@ $select_result = mysql_query($sql, $db);
 // выводим в форму все данные из таблицы
 while($data = mysql_fetch_array($select_result)){ 
     echo '<div class = "news">';
-    //echo;
     echo '<h2>' . $data['title'] . '</h2>'; 
     echo '<img class = "img_news" src="images/'.$data['img'].'" >';
-    echo '<p class = "text">' . $data['text'] . '</p>';
+    echo '<p>' . $data['text'] . '</p>';
     echo '<p>' . $data['date'] . '</p>';
     echo '</div>';
     

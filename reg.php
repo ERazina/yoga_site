@@ -1,20 +1,60 @@
+
+
 <?php
-define('PAGE', 'about');
+define('PAGE', 'reg');
 include_once "header.html";
 include_once "menu.php";
+include_once "config.php";
 ?>
-<h1>Регистрация</h1>
-<div id = "reg_form">
-<form method="post">
-    <div>Имя*<input type = "text" name = "name" placeholder="Иван" required></div>
-    <div>Фамилия*<input type = "text" name = "surname" placeholder="Иванов" required></div>
-    <div>Логин*<input type = "login" name = "login" placeholder="login" required></div>
-    <div>Пароль*<input type = "pass" name = "login" placeholder="pass" required></div>
-    <div>Email*<input type = "text" name = "email" placeholder="ivanov@ivanov.ru" required></div>
-    <input type = "submit" value = "Зарегистрироваться">
+<form method = "post">
+    <div><input type="text" name="login"></div>
+    <div><input type="password" name="pass"></div>
+    <div><input type="submit" value="Поехали!"></div>
 </form>
-</div>
-* - поля, обязательные для заполнения
+
 <?php
-include_once "footer.html";
+if(!empty($_POST)){
+    include_once "function.php";
+    
+    $login = mysqli_real_escape_string($db, $_POST['login']);
+    $pass = md5($_POST['pass']);
+    
+    $query = mysqli_query($db, "
+    SELECT `id` FROM `users` WHERE `login` = '$login'
+    ");
+    
+    if(mysqli_num_rows($query) == 0){
+        $query = mysqli_query($db, "
+        INSERT INTO `users`
+        SET `login` = '$login',
+        `pass` = '$pass'
+        ");
+        
+        if(mysqli_errno($db) == 0){
+            $id = mysqli_insert_id($db);
+            $session = getHash();
+            $token = getHash();
+            echo $session.'</br>';
+            echo $token;
+            
+            mysqli_query($db, "
+            INSERT INTO `connect` SET
+            `id_user` = $id,
+            `session` = '$session',
+            `token` = '$token';
+            ");
+            
+            setcookie('s', $session);
+            setcookie('t', $token);
+            header("Location: auth.php");
+            
+        }
+    }
+    else{
+        echo 'Данный логин уже используется';
+    }
+}
+
+
+
 ?>

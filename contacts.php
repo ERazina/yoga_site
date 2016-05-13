@@ -11,6 +11,7 @@ include_once "menu.php";
     <h2 id = "contacts_header">Мы всегда рады Вам</h2>
     <p><b>Наш адрес:</b> Санкт-Петербург, наб. Фонтанки, д.39</p>
     <p><b>Телефон:</b> +7(921)318-15-20</p>
+    <a href="skype:elina.razina" id="skype">elina.razina</a>
 </div>
 </div>
 <?php
